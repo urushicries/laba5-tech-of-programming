@@ -1,0 +1,708 @@
+{
+    "name": "Cairo Metro",
+    "lines": [
+        {
+            "id": 1,
+            "name": "Line 1",
+            "color": "red",
+            "stations": [
+                "Helwan",
+                "Ain Helwan",
+                "Helwan University",
+                "Wadi Hof",
+                "Hadayek Helwan",
+                "El-Maasara",
+                "Tora El-Asmant",
+                "Kozzika",
+                "Tora El-Balad",
+                "Sakanat El-Maadi",
+                "Maadi",
+                "Hadayek El-Maadi",
+                "Dar El-Salam",
+                "El-Zahraa",
+                "Mar Girgis",
+                "El-Malek El-Saleh",
+                "Al-Sayeda Zeinab",
+                "Saad Zaghloul",
+                "Sadat",
+                "Nasser",
+                "Orabi",
+                "Al-Shohadaa",
+                "Ghamra",
+                "El-Demerdash",
+                "Manshiet El-Sadr",
+                "Kobri El-Qobba",
+                "Hammamat El-Qobba",
+                "Saray El-Qobba",
+                "Hadayeq El-Zaitoun",
+                "Helmeyet El-Zaitoun",
+                "El-Matareyya",
+                "Ain Shams",
+                "Ezbet El-Nakhl",
+                "El-Marg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Line 2",
+            "color": "yellow",
+            "stations": [
+                "Shubra El-Kheima",
+                "Koliet El-Zeraa",
+                "El-Mazallat",
+                "El-Khalafawi",
+                "St. Teresa",
+                "Rod El-Farag",
+                "Massara",
+                "Al-Shohadaa",
+                "Attaba",
+                "Mohamed Naguib",
+                "Sadat",
+                "Opera",
+                "Dokki",
+                "El Bohoos",
+                "Cairo University",
+                "Faisal",
+                "El Giza",
+                "Omm El Misryeen",
+                "Sakiat Mekki",
+                "El Monib"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Line 3",
+            "color": "blue",
+            "stations": [
+                "Adly Mansour",
+                "El Haykestep",
+                "Omar Ibn El-Khattab",
+                "Qubbah",
+                "Hesham Barakat",
+                "El Nozha",
+                "Nadi El Shams",
+                "Alf Maskan",
+                "Heliopolis Square",
+                "Haroun",
+                "Al-Ahram",
+                "Koleyet El Banat",
+                "Cairo Stadium",
+                "Fair Zone",
+                "Abbassia",
+                "Abdou Pasha",
+                "El Geish",
+                "Bab El Shaaria",
+                "Attaba",
+                "Nasser",
+                "Maspero",
+                "Safaa Hegazy",
+                "Kit Kat",
+                "Sudan St.",
+                "Imbaba",
+                "El-Bohy",
+                "El-Qawmia",
+                "Ring Road",
+                "Cairo Intl. Airport Terminal 1",
+                "Cairo Intl. Airport Terminal 2",
+                "Cairo Intl. Airport Terminal 3"
+            ]
+        }
+    ],
+    "stations": [
+        {
+            "name": "Helwan",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Ain Helwan",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Helwan University",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Wadi Hof",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Hadayek Helwan",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "El-Maasara",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Tora El-Asmant",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Kozzika",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Tora El-Balad",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Sakanat El-Maadi",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Maadi",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Hadayek El-Maadi",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Dar El-Salam",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "El-Zahraa",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Mar Girgis",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "El-Malek El-Saleh",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Al-Sayeda Zeinab",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Saad Zaghloul",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Sadat",
+            "lines": [
+                1,
+                2
+            ],
+            "transfer": true
+        },
+        {
+            "name": "Nasser",
+            "lines": [
+                1,
+                3
+            ],
+            "transfer": true
+        },
+        {
+            "name": "Orabi",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Al-Shohadaa",
+            "lines": [
+                1,
+                2
+            ],
+            "transfer": true
+        },
+        {
+            "name": "Ghamra",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "El-Demerdash",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Manshiet El-Sadr",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Kobri El-Qobba",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Hammamat El-Qobba",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Saray El-Qobba",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Hadayeq El-Zaitoun",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Helmeyet El-Zaitoun",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "El-Matareyya",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Ain Shams",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Ezbet El-Nakhl",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "El-Marg",
+            "lines": [
+                1
+            ]
+        },
+        {
+            "name": "Shubra El-Kheima",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Koliet El-Zeraa",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "El-Mazallat",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "El-Khalafawi",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "St. Teresa",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Rod El-Farag",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Massara",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Attaba",
+            "lines": [
+                2,
+                3
+            ],
+            "transfer": true
+        },
+        {
+            "name": "Mohamed Naguib",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Opera",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Dokki",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "El Bohoos",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Cairo University",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Faisal",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "El Giza",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Omm El Misryeen",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Sakiat Mekki",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "El Monib",
+            "lines": [
+                2
+            ]
+        },
+        {
+            "name": "Adly Mansour",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "El Haykestep",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Omar Ibn El-Khattab",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Qubbah",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Hesham Barakat",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "El Nozha",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Nadi El Shams",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Alf Maskan",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Heliopolis Square",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Haroun",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Al-Ahram",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Koleyet El Banat",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Cairo Stadium",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Fair Zone",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Abbassia",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Abdou Pasha",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "El Geish",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Bab El Shaaria",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Maspero",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Safaa Hegazy",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Kit Kat",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Sudan St.",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Imbaba",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "El-Bohy",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "El-Qawmia",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Ring Road",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Cairo Intl. Airport Terminal 1",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Cairo Intl. Airport Terminal 2",
+            "lines": [
+                3
+            ]
+        },
+        {
+            "name": "Cairo Intl. Airport Terminal 3",
+            "lines": [
+                3
+            ]
+        }
+    ],
+    "transfers": [
+        {
+            "station": "Sadat",
+            "lines": [
+                1,
+                2
+            ]
+        },
+        {
+            "station": "Nasser",
+            "lines": [
+                1,
+                3
+            ]
+        },
+        {
+            "station": "Al-Shohadaa",
+            "lines": [
+                1,
+                2
+            ]
+        },
+        {
+            "station": "Attaba",
+            "lines": [
+                2,
+                3
+            ]
+        }
+    ],
+    "Travel time": {
+        "Line 1": {
+            "Helwan": 4,
+            "Ain Helwan": 5,
+            "Helwan University": 4,
+            "Wadi Hof": 6,
+            "Hadayek Helwan": 6,
+            "El-Maasara": 4,
+            "Tora El-Asmant": 5,
+            "Kozzika": 5,
+            "Tora El-Balad": 3,
+            "Sakanat El-Maadi": 4,
+            "Maadi": 5,
+            "Hadayek El-Maadi": 5,
+            "Dar El-Salam": 4,
+            "El-Zahraa": 3,
+            "Mar Girgis": 5,
+            "El-Malek El-Saleh": 5,
+            "Al-Sayeda Zeinab": 6,
+            "Saad Zaghloul": 6,
+            "Sadat": 5,
+            "Nasser": 7
+        },
+        "Line 2": {
+            "Shubra El-Kheima": 4,
+            "Koliet El-Zeraa": 2,
+            "El-Mazallat": 4,
+            "El-Khalafawi": 6,
+            "St. Teresa": 3,
+            "Rod El-Farag": 5,
+            "Massara": 4,
+            "Al-Shohadaa": 6,
+            "Attaba": 3,
+            "Mohamed Naguib": 5,
+            "Sadat": 4,
+            "Opera": 5,
+            "Dokki": 6,
+            "El Bohoos": 6,
+            "Cairo University": 4,
+            "Faisal": 5
+        },
+        "Line 3": {
+            "Adly Mansour": 3,
+            "El Haykestep": 3,
+            "Omar Ibn El-Khattab": 4,
+            "Qubbah": 5,
+            "Hesham Barakat": 4,
+            "El Nozha": 6,
+            "Nadi El Shams": 9,
+            "Alf Maskan": 14,
+            "Heliopolis Square": 6,
+            "Haroun": 8,
+            "Al-Ahram": 2,
+            "Koleyet El Banat": 8,
+            "Cairo Stadium": 7,
+            "Fair Zone": 6,
+            "Abbassia": 5
+        },
+        "Line 4": {
+            "Abdou Pasha": 4,
+            "El Geish": 2,
+            "Bab El Shaaria": 4,
+            "Attaba": 6,
+            "Nasser": 8,
+            "Maspero": 4,
+            "Safaa Hegazy": 3,
+            "Kit Kat": 6,
+            "Sudan St.": 9,
+            "Imbaba": 5
+        }
+    }
+}
