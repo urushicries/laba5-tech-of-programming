@@ -24,12 +24,10 @@ def travel_time_dict(metro_data):
 
 
 def find_shortest_path(metro_data, start_station, end_station, transfer_time=5, default_travel_time=3):
-    # Prepare data structures
     travel_times = travel_time_dict(metro_data)
     station_lines = {}
     line_stations = {}
 
-    # Map stations to lines and lines to stations
     for line in metro_data['lines']:
         line_name = line['name']
         stations = [station if isinstance(station, str) else station.get(
@@ -38,11 +36,9 @@ def find_shortest_path(metro_data, start_station, end_station, transfer_time=5, 
         for station in stations:
             station_lines.setdefault(station, set()).add(line_name)
 
-    # Dijkstra's algorithm: (cost, transfers, station, line, path)
     heap = []
     visited = {}
 
-    # Start from all lines that have the start_station
     for line in station_lines.get(start_station, []):
         heapq.heappush(heap, (0, 0, start_station,
                        line, [(start_station, line)]))
@@ -67,7 +63,6 @@ def find_shortest_path(metro_data, start_station, end_station, transfer_time=5, 
                 best_transfers = transfer_count
             continue
 
-        # Move to adjacent stations on the same line
         stations = line_stations[line]
         idx = stations.index(station)
         for next_idx in [idx - 1, idx + 1]:
@@ -78,7 +73,6 @@ def find_shortest_path(metro_data, start_station, end_station, transfer_time=5, 
                 heapq.heappush(
                     heap, (cost + t, transfers, next_station, line, path + [(next_station, line)]))
 
-        # Transfer to other lines at the same station
         for other_line in station_lines[station]:
             if other_line != line:
                 heapq.heappush(heap, (cost + transfer_time, transfers + 1,
@@ -119,11 +113,10 @@ def draw_metro_map(metro_data, filename="metro_map.png"):
     colors = [
         'red', 'blue', 'green', 'orange', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan'
     ]
-    # Assign a color to each line
+
     for idx, line in enumerate(metro_data['lines']):
         color_map[line['name']] = colors[idx % len(colors)]
 
-    # Add stations and edges for each line
     for line in metro_data['lines']:
         stations = [station if isinstance(station, str) else station.get(
             'name', '') for station in line['stations']]
@@ -131,7 +124,6 @@ def draw_metro_map(metro_data, filename="metro_map.png"):
             G.add_edge(stations[i], stations[i+1],
                        color=color_map[line['name']])
 
-    # Get edge colors
     edge_colors = [G[u][v]['color'] for u, v in G.edges()]
 
     pos = nx.kamada_kawai_layout(G)
@@ -146,16 +138,10 @@ def draw_metro_map(metro_data, filename="metro_map.png"):
 
 
 def main():
-    # Load the metro map from a JSON file
+
     metro_data = load_metro_map('metro.json')
-
-    # Convert the metro map to a dictionary
     metro_dict = metro_map_to_dict(metro_data)
-
-    # Draw the metro map
     draw_metro_map(metro_data)
-
-    # Optionally, allow user to find shortest route
     user_shortest_route(metro_data)
 
 
